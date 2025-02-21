@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"href="styles.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GlobalNews</div>
+            <div class="nav-links">
+                <div class="categories" id="categories"></div>
+            </div>
+            <div class="nav-controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search news...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-categories" id="sidebarCategories"></div>
+    </aside>
+
+    <main class="news-container" id="newsContainer"></main>
+
+    <div class="loading" id="loading">Loading more news...</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
